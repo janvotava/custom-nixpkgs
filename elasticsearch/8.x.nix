@@ -20,12 +20,12 @@ let
       x86_64-linux = "";
       x86_64-darwin = "";
       aarch64-linux = "";
-      aarch64-darwin = "Vv24vka0sJwxJkwRZxXAsfFLq1c+hOLyEqnslbZkvJ4=";
+      aarch64-darwin = "sha256-u8sWQCcuL7q4cB0W9ZF7VN7XrGm6qfrZjiwmXow3tJk=";
     };
 in
 stdenv.mkDerivation rec {
   pname = "elasticsearch";
-  version = "8.5.3";
+  version = "8.6.1";
 
   src = fetchurl {
     url = "https://artifacts.elastic.co/downloads/elasticsearch/${pname}-${version}-${plat}-${arch}.tar.gz";
