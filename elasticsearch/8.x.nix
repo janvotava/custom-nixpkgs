@@ -18,7 +18,7 @@ let
   shas =
     {
       x86_64-linux = "";
-      x86_64-darwin = "";
+      x86_64-darwin = "sha256-oRSeXUWLlW+khjz0Psz48LdnlHTps2Y/zmIPGiEUlu4=";
       aarch64-linux = "";
       aarch64-darwin = "sha256-u8sWQCcuL7q4cB0W9ZF7VN7XrGm6qfrZjiwmXow3tJk=";
     };
