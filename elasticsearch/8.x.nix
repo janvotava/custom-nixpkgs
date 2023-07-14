@@ -18,14 +18,14 @@ let
   shas =
     {
       x86_64-linux = "";
-      x86_64-darwin = "sha256-oRSeXUWLlW+khjz0Psz48LdnlHTps2Y/zmIPGiEUlu4=";
+      x86_64-darwin = "";
       aarch64-linux = "";
-      aarch64-darwin = "sha256-u8sWQCcuL7q4cB0W9ZF7VN7XrGm6qfrZjiwmXow3tJk=";
+      aarch64-darwin = "sha256-M11oF/kLB0jhqmmYIKjmGZoG5PIFJ+WW3DVl47WmM9s=";
     };
 in
 stdenv.mkDerivation rec {
   pname = "elasticsearch";
-  version = "8.6.1";
+  version = "8.8.2";
 
   src = fetchurl {
     url = "https://artifacts.elastic.co/downloads/elasticsearch/${pname}-${version}-${plat}-${arch}.tar.gz";
