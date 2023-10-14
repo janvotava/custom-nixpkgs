@@ -17,15 +17,15 @@ let
   plat = elemAt info 1;
   shas =
     {
-      x86_64-linux = "";
-      x86_64-darwin = "";
-      aarch64-linux = "";
-      aarch64-darwin = "sha256-M11oF/kLB0jhqmmYIKjmGZoG5PIFJ+WW3DVl47WmM9s=";
+      x86_64-linux = "sha256-ALpm0bZyJu2H/xwngVu1lh41IXdwndh5Tvmne06Qo5Q=";
+      x86_64-darwin = "sha256-3t++qxONnCMMz3tCvfK/W8bx2hzQdE99Baap6sxAeVc=";
+      aarch64-linux = "sha256-ypZczKq73LZ/E6fnsWa9fFEATJylXsC6AExHXKACS+8=";
+      aarch64-darwin = "sha256-TpM42/DUTNEg8BcIfuf1ziUVYcQ8MSfO08hCtPTD+6E=";
     };
 in
 stdenv.mkDerivation rec {
   pname = "elasticsearch";
-  version = "8.8.2";
+  version = "8.10.3";
 
   src = fetchurl {
     url = "https://artifacts.elastic.co/downloads/elasticsearch/${pname}-${version}-${plat}-${arch}.tar.gz";
