@@ -1,7 +1,7 @@
 {
   description = "Custom Nix packages";
 
-  outputs = { nixpkgs }:
+  outputs = { nixpkgs, ... }:
     let
       forAllSystems = nixpkgs.lib.genAttrs nixpkgs.lib.systems.flakeExposed;
     in
